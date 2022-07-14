@@ -1,10 +1,8 @@
 package ru.netology;
 
 import io.restassured.response.ValidatableResponse;
-import io.restassured.specification.Argument;
 import org.junit.jupiter.api.Test;
 
-import java.util.List;
 
 import static io.restassured.RestAssured.given;
 
@@ -20,7 +18,7 @@ public class demoTest {
                 .post("/post")
                 .then()
                 .statusCode(200)
-                .header("content-length","425");
+                ;
 
     }
 
